@@ -1,0 +1,35 @@
+
+<div class="container-fluid my-4">
+
+    <div class="row">
+        <div class="col-12">
+            <form action="{{ path('vehicle_index') }}"  method="GET">
+                <div class="form-group">
+                    <input type="text" name="vehicle_search" class="form-control" placeholder="Rechercher un vehicule...">
+                </div>
+                <button class="btn btn-success pull-right">Recherche de véhicule par marque, modèle ou immatriculation</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid my-4">
+
+    <div class="row">
+        <div class="col-12">
+            <form action="{{ path('driver_index') }}"  method="GET">
+                <div class="form-group">
+                    <input type="text" name="driver_search" class="form-control" placeholder="Rechercher un conducteur..">
+                </div>
+                <button class="btn btn-success pull-right">Recherche de conducteur par nom, prénom ou numéro de téléphone</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+

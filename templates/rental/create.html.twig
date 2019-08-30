@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <!--<button class="btn btn-primary">{{ button_label|default('Create') }}</button> -->
+    {% if editMode %}
+        <button class="btn btn-success pull-right">UPDATE</button>
+    {% else %}
+        <button class="btn btn-success pull-right">SAVE</button>
+    {% endif %}
+
+    {{ form_end(form) }}
+
+{% endblock %}
+{% block title %}
+{% endblock %}
+

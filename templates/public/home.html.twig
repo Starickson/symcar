@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% include 'public/partials/_form.html.twig' %}
+
+    <p> Nombre de conducteurs :{{ nbdriver }}</p>
+    <p>Nombre de Véhicules à Louer :{{ nbvehicle }}</p>
+    <p> Nombre de Locations en cours  :{{ nbrental }}</p>
+    <p>Blague du siècle , nb de véicules non loués = {{ nbvehicle -  nbrental }}</p>
+
+    <table class="table">
+        <thead>
+        <tr>
+             <th scope="#"></th>
+            <th scope="col">Nombre de conducteurs </th>
+            <th scope="col">Nombre de véhicules à louer </th>
+            <th scope="col">Nb de locations</th>
+            <th scope="col">nb de véhicules non loués</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>{{ nbdriver }}</td>
+            <td>{{ nbvehicle }}</td>
+            <td>{{ nbrental }}</td>
+            <td> {{ nbvehicle -  nbrental }}</td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+{% endblock %}
+{% block title %}
+{% endblock %}
+
+
+
+
+
